@@ -2,7 +2,11 @@
 
 # Coze MCP Server For OpenClaw
 
-这是一个基于MCP（Model Context Protocol）标准的服务器，可以将指定的Coze Workspace中的工作流暴露为MCP工具，主要提供给OpenClaw进行使用，也可以给其他支持MCP协议的AI客户端调用。
+配置扣子工作流，然后立刻就可以在OpenClaw中使用它！
+
+通过本项目，你可以快速实现：
+1. 将你自己的Coze工作流们快速封装为一个MCP服务，并运行在本地
+2. 通过script中的make_skills脚本快速为你的龙虾配置上使用工作流的技能
 
 本项目旨在通过Coze的工作流提供一种简单、高效的给OpenClaw提供额外技能的方式。相较于直接安装OpenClaw技能，使用Coze工作流进行技能管理主要有以下优势：
 
