@@ -1,3 +1,5 @@
+![Header](./docs/banner.png)
+
 # Coze MCP Server For OpenClaw
 
 这是一个基于MCP（Model Context Protocol）标准的服务器，可以将指定的Coze Workspace中的工作流暴露为MCP工具，主要提供给OpenClaw进行使用，也可以给其他支持MCP协议的AI客户端调用。
