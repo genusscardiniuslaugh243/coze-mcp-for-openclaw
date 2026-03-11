@@ -104,6 +104,9 @@ async def run_workflow(workflow_id: str, parameters: dict[str, Any] = None) -> d
             "workflow_id": workflow_id,
             "is_async": False
         }
+
+        if type(parameters) == str:
+            parameters = json.loads(parameters)
         
         if parameters:
             payload["parameters"] = parameters
@@ -221,6 +224,7 @@ async def run_workflow_by_name(workflow_name: str, parameters: str = "{}") -> st
             params = json.loads(parameters) if parameters else {}
         except json.JSONDecodeError:
             return f"参数格式错误，请提供有效的JSON字符串，例如: {{\"key\": \"value\"}}"
+
         
         result = await run_workflow(workflow_id, params)
         

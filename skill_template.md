@@ -8,7 +8,9 @@ description: {workflow_description}
 
 ## 使用方式
  - 你需要通过coze-mcp来使用这个技能
- - 通过coze-mcp的{workflow_name}命令来执行这个技能
+ - 通过coze-mcp的run_workflow_by_name命令来执行这个技能
+ - 你需要传递workflow_name参数，值为{workflow_name}
+ - 根据下面的传参说明填入parameters参数
  
 ## 传参及说明
 {workflow_params}
